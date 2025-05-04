@@ -82,7 +82,7 @@ function populateListInput() {
             max:   "99",
             id:    new_id,
             index: i,
-            value: localStorage.getItem(new_id) || getRandomInt(1, 100)
+            value: localStorage.getItem(new_id) || getRandomInt(1, 1000)
           }
         );
         new_list_element.addEventListener('input', saveLocalDataCallback);
