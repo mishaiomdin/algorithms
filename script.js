@@ -6,6 +6,10 @@
 
 // script.js
 
+function getRandomInt(min, max) {
+    return min + Math.floor(Math.random() * (max - min));
+}
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
@@ -78,7 +82,7 @@ function populateListInput() {
             max:   "99",
             id:    new_id,
             index: i,
-            value: localStorage.getItem(new_id) || getRandomInt(100)
+            value: localStorage.getItem(new_id) || getRandomInt(1, 100)
           }
         );
         new_list_element.addEventListener('input', saveLocalDataCallback);
