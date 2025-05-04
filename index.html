@@ -1,0 +1,79 @@
+<!--
+Project name: 
+Started on: 
+Link: 
+by @mishaiomdin
+
+
+index.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title id="titleBrowser">Algorithms</title>
+
+    <!-- LIBRARIES -->
+
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://fonts.gstatic.com/s/e/notoemoji/latest/1f916/512.webp">
+</head>
+<body>
+    <header>
+        <h1 class="icon-text">
+            <span class="logo" style="height: 70px;">
+                <!-- Logo: animated emoji -->
+                <picture>
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f916/512.webp" type="image/webp">
+                    <img class="logo" src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f916/512.gif" alt="🤖">
+                </picture>
+            </span>
+            <span id="titleText">Algorithms visualized</span>
+        </h1>
+
+        <span class="icon-text">
+            <span class="material-symbols-outlined">language</span>
+            <select id="languageSelector" onchange="changeLanguage();">
+                <option value="en">English</option>
+                <option value="ru">Русский</option>
+            </select>
+        </span>
+    </header>
+    <main>
+        <h2 class="icon-text">
+            <span class="material-symbols-outlined">settings</span>
+            <span id="settingsTitle">Sorting algorithms</span>
+        </h2>
+        <br>
+        <h3 class="icon-text">
+            <span class="material-symbols-outlined">bubble_chart</span>
+            <span id="settingsTitle">Bubble Sort</span>
+        </h3>
+        <p>In each iteration, Bubble Sort pushes the biggest element all the way to the right. Time complexity: \(O(n^2)\)</p>
+        <p id="list" class="list">
+        </p>
+        <button id="bubble_sort_button" onclick="bubbleSort();">Run Bubble Sort</button>
+        <button id="bubble_sort_button" onclick="shuffleList();">Shuffle list</button>
+        
+    </main>
+
+    <footer>
+        <p id="footerText"><span id="footerBy">by: </span><a href="https://mishaiomdin.github.io/" target="_blank"><span id="misha_iomdin">Misha Iomdin</span></a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
