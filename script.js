@@ -48,12 +48,22 @@ async function changeLanguage() {
         // Apply translations dynamically
         Object.entries(translations[lang]).forEach(([key, value]) => {
             const element = document.getElementById(key);
-            if (element) element.textContent = value;
+            if (element) {
+                // Find first text node
+                const textNode = Array.from(element.childNodes).find(node => node.nodeType === Node.TEXT_NODE);
+                if (textNode) {
+                    textNode.nodeValue = value;
+                } else {
+                    // If no text node, insert one at the beginning
+                    element.insertBefore(document.createTextNode(value), element.firstChild);
+                }
+            }
         });
     } catch (error) {
         console.error("Error loading translations:", error);
     }
 };
+
 
 /* SORTING ALGORITHMS */
 

@@ -5,9 +5,11 @@
         "footerBy": "by: ",
         "misha_iomdin": "Misha Iomdin",
 
-        "about_h2": "This is a template website.",
-        "about_text": "Here is some text.",
-        "euler": "Here's Euler's formula: "
+        "sortingAlgorithmsTitle": "Sorting algorithms",
+        "bubbleSortTitle": "Bubble Sort",
+        "bubbleSortExplanation": "In each iteration, Bubble Sort pushes the biggest element all the way to the right. Time complexity: ",
+        "bubble_sort_button": "Run Bubble Sort",
+        "shuffle_list_button": "Shuffle list"
     },
 
     "ru": {
@@ -16,9 +18,10 @@
         "footerBy": "автор: ",
         "misha_iomdin": "Миша Иомдин",
 
-        "about_h2": "Это шаблон сайта.",
-        "about_text": "Вот какой-то текст.",
-        "euler": "Вот формула Эйлера: "
-        
+        "sortingAlgorithmsTitle": "Алгоритмы сортировки",
+        "bubbleSortTitle": "Сортировка пузырьком (Bubble Sort)",
+        "bubbleSortExplanation": "На каждой итерации наибольший элемент продвигается в правый конец. Сложность алгоритма по времени: ",
+        "bubble_sort_button": "Запустить Bubble Sort",
+        "shuffle_list_button": "Перемешать список"
     }
 }
