@@ -2,7 +2,6 @@
     "en": {
         "titleBrowser": "Algorithms visualized",
         "titleText": "Visualized algorithms",
-        "footerBy": "by: ",
         "misha_iomdin": "Misha Iomdin",
 
         "sortingAlgorithmsTitle": "Sorting algorithms",
@@ -15,7 +14,6 @@
     "ru": {
         "titleBrowser": "Алгоритмы: визуализация",
         "titleText": "Визуализация алгоритмов",
-        "footerBy": "автор: ",
         "misha_iomdin": "Миша Иомдин",
 
         "sortingAlgorithmsTitle": "Алгоритмы сортировки",
