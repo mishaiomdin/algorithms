@@ -31,6 +31,33 @@ index.html
     <link rel="shortcut icon" type="image/x-icon" href="https://fonts.gstatic.com/s/e/notoemoji/latest/1f916/512.webp">
 </head>
 <body>
+
+    <sticky_header>
+        <!-- Path to website -->
+        <p class="icon-text">
+        
+            <!-- Misha Iomdin -->
+            <span class="material-symbols-outlined">home</span>
+            <a href="https://mishaiomdin.github.io/" target="_blank" id="misha_iomdin">Misha Iomdin</a>
+    
+            <span>/</span>
+    
+            <!-- this website -->
+            <span class="material-symbols-outlined">ifl</span>
+            <span>algorithms</span>
+    
+        </p>
+    
+        <!-- Language selector -->
+        <span class="icon-text" id="languageSelectorWrapper">
+            <span class="material-symbols-outlined">language</span>
+            <select id="languageSelector" onchange="changeLanguage();">
+                <option value="en">English</option>
+                <option value="ru">Русский</option>
+            </select>
+        </span>
+    </sticky_header>
+
     <header>
         <h1 class="icon-text">
             <span class="logo" style="height: 70px;">
@@ -40,17 +67,10 @@ index.html
                     <img class="logo" src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f916/512.gif" alt="🤖">
                 </picture>
             </span>
-            <span id="titleText">Algorithms visualized</span>
+            <span id="titleText">Visualized algorithms</span>
         </h1>
-
-        <span class="icon-text" id="languageSelectorWrapper">
-            <span class="material-symbols-outlined">language</span>
-            <select id="languageSelector" onchange="changeLanguage();">
-                <option value="en">English</option>
-                <option value="ru">Русский</option>
-            </select>
-        </span>
     </header>
+
     <main>
         <h2 class="icon-text">
             <span class="material-symbols-outlined">settings</span>
