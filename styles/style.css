@@ -47,12 +47,6 @@ style.css
     vertical-align: middle;  /* Align vertically */
 }
 
-.logo {
-    height: 70px;
-}
-
-
-
 /* OVERALL */
 
 /*
@@ -75,12 +69,10 @@ body, button, input, select, textarea {
 /* BODY */
 
 body {
-    background-color: #f4f7f6;
+    background-color: white;
     margin: 0;
     padding: 0;
 }
-
-
 
 /* HEADER */
 
@@ -96,17 +88,44 @@ header {
     
 }
 
+.logo {
+  height: 70px;
+}
+
+#languageSelectorWrapper {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 /* MAIN */
 
 main {
+  background-color: white;
+  box-shadow: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+/* MAIN FOR WIDE (TABLETS, DESKTOPS) */
+@media (min-width: 850px) {
+  body {
+    background-color: #f4f7f6;
+  }
+
+  main {
     max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #ffffff;
+    margin: 2rem auto;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 1em;
+  }
 }
 
 
@@ -115,7 +134,6 @@ main {
 footer {
     text-align: center;
     margin-top: 30px;
-    padding-top: 10px;
     font-size: 14px;
     color: #888;
 
@@ -143,10 +161,6 @@ h2 {
 
 h3 {
   font-size: 1.25em;
-}
-
-p {
-  margin-top: 0px;
 }
 
 /* Buttons */
