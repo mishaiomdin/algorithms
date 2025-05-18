@@ -90,8 +90,29 @@ eval.html
                 In postfix notation,
                 a binary operator is written
                 <strong>after</strong> the two arguments:
-                <span>\(a \ b \ +\)</span>
+                <span>\(a + b \iff \)</span><code>a b +</code>
             </p>
+            <p id="parsed_list" class="list"></p>
+            <p>
+                Enter an expression,
+                using the binary operators <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>
+                one space between numbers and operators:
+                <p>
+                    <input id="expression_input"></input>
+                </p>
+            </p>
+            <button id="postfixNotationEvalButton" onclick="postfixNotationEval();">Evaluate</button>
+            <div id="evaluationResult" style="display: none;">
+                <div id="receivedExpressionWrapper" style="display: none;">
+                Received expression: <code id="receivedExpression"></code>
+                </div>
+                <div id="numbersStackWrapper" style="display: none;">
+                Stack: <span id="numbersStack"></span>
+                </div>
+                <div id="resultEvalWrapper" style="display: none;">
+                Result: <code id="resultEval"></code>
+                </div>
+            </div>
         </div>
     </main>
 
