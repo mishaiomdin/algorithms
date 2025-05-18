@@ -72,21 +72,43 @@ index.html
     </header>
 
     <main>
-        <h2 class="icon-text">
-            <span class="material-symbols-outlined">settings</span>
-            <span id="sortingAlgorithmsTitle">Sorting algorithms</span>
-        </h2>
-        <br>
-        <h3 class="icon-text">
-            <span class="material-symbols-outlined">bubble_chart</span>
-            <span id="bubbleSortTitle">Bubble Sort</span>
-        </h3>
-        <p id="bubbleSortExplanation">In each iteration, Bubble Sort pushes the biggest element all the way to the right. Time complexity: <span>\(O(n^2)\)</span></p>
-        <p id="list" class="list">
-        </p>
-        <button id="bubble_sort_button" onclick="bubbleSort();">Run Bubble Sort</button>
-        <button id="shuffle_list_button" onclick="shuffleList();">Shuffle list</button>
-        
+        <!-- Evaluation algorithms -->
+        <div id="evaluationAlgorithms">
+            <h2 class="icon-text">
+                <span class="material-symbols-outlined">calculate</span>
+                <span id="evaluationAlgorithmsTitle">Evaluation algorithms</span>
+            </h2>
+            <br>
+            <h3 class="icon-text">
+                <span class="material-symbols-outlined">add_circle</span>
+                <span id="postfixNotationTitle">Postfix notation</span>
+            </h3>
+            <p id="postfixNotationExplanation">
+                In postfix notation,
+                a binary operator is written
+                <strong>after</strong> the two arguments:
+                <span>\(a \ b \ +\)</span>
+            </p>
+        </div>
+
+        <!-- Sorting algorithms -->
+        <div id="sortingAlgorithms">
+            <h2 class="icon-text">
+                <span class="material-symbols-outlined">settings</span>
+                <span id="sortingAlgorithmsTitle">Sorting algorithms</span>
+            </h2>
+            <br>
+            <h3 class="icon-text">
+                <span class="material-symbols-outlined">bubble_chart</span>
+                <span id="bubbleSortTitle">Bubble Sort</span>
+            </h3>
+            <p id="bubbleSortExplanation">In each iteration, Bubble Sort pushes the biggest element all the way to the right. Time complexity: <span>\(O(n^2)\)</span></p>
+            <p id="list" class="list">
+            </p>
+            <button id="bubble_sort_button" onclick="bubbleSort();">Run Bubble Sort</button>
+            <button id="shuffle_list_button" onclick="shuffleList();">Shuffle list</button>
+        </div>
+
     </main>
 
     <script src="script.js"></script>
