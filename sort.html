@@ -3,8 +3,11 @@ Project name: algorithms
 Started on: 5.05.2025
 by @mishaiomdin
 
+Page: sorting algorithms
+Path: /sort
+Started on: 5.05.2025
 
-index.html
+sort.html
 -->
 
 <!DOCTYPE html>
@@ -72,23 +75,30 @@ index.html
     </header>
 
     <main>
-        <!-- Welcome!-->
-        <div id="about">
+        <!-- Sorting algorithms -->
+        <div id="sortingAlgorithms">
             <h2 class="icon-text">
-                <span class="material-symbols-outlined">description</span>
-                <span id="aboutTitle">About</span>
+                <span class="material-symbols-outlined">settings</span>
+                <span id="sortingAlgorithmsTitle">Sorting algorithms</span>
             </h2>
-            <p id="aboutExplanation">
-                Hi! I'm Misha Iomdin. <br>
-                Here, I will be posting various algorithms and their visualizations.
+            <br>
+            <h3 class="icon-text">
+                <span class="material-symbols-outlined">bubble_chart</span>
+                <span id="bubbleSortTitle">Bubble Sort</span>
+            </h3>
+            <p id="bubbleSortExplanation">In each iteration, Bubble Sort pushes the biggest element all the way to the right. Time complexity: <span>\(O(n^2)\)</span></p>
+            <p id="list" class="list">
             </p>
+            <button id="bubble_sort_button" onclick="bubbleSort();">Run Bubble Sort</button>
+            <button id="shuffle_list_button" onclick="shuffleList();">Shuffle list</button>
         </div>
 
-        <button id="to_sort" onclick="window.location.href='/sort'">Sorting algorithms</button>
-        <button id="to_eval" onclick="window.location.href='/eval'">Evalutation algorithms</button>
     </main>
 
     <!-- Main script -->
     <script src="scripts/script.js"></script>
+
+    <!-- Algorithms scripts -->
+     <script src="scripts/bubbleSort.js"></script>
 </body>
 </html>

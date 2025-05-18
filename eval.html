@@ -3,8 +3,11 @@ Project name: algorithms
 Started on: 5.05.2025
 by @mishaiomdin
 
+Page: evaluation algorithms
+Path: /eval
+Started on: 18.05.2025
 
-index.html
+eval.html
 -->
 
 <!DOCTYPE html>
@@ -72,23 +75,30 @@ index.html
     </header>
 
     <main>
-        <!-- Welcome!-->
-        <div id="about">
+        <!-- Evaluation algorithms -->
+        <div id="evaluationAlgorithms">
             <h2 class="icon-text">
-                <span class="material-symbols-outlined">description</span>
-                <span id="aboutTitle">About</span>
+                <span class="material-symbols-outlined">calculate</span>
+                <span id="evaluationAlgorithmsTitle">Evaluation algorithms</span>
             </h2>
-            <p id="aboutExplanation">
-                Hi! I'm Misha Iomdin. <br>
-                Here, I will be posting various algorithms and their visualizations.
+            <br>
+            <h3 class="icon-text">
+                <span class="material-symbols-outlined">add_circle</span>
+                <span id="postfixNotationTitle">Postfix notation</span>
+            </h3>
+            <p id="postfixNotationExplanation">
+                In postfix notation,
+                a binary operator is written
+                <strong>after</strong> the two arguments:
+                <span>\(a \ b \ +\)</span>
             </p>
         </div>
-
-        <button id="to_sort" onclick="window.location.href='/sort'">Sorting algorithms</button>
-        <button id="to_eval" onclick="window.location.href='/eval'">Evalutation algorithms</button>
     </main>
 
     <!-- Main script -->
     <script src="scripts/script.js"></script>
+
+    <!-- Algorithms scripts -->
+     <script src="scripts/postfixNotation.js"></script>
 </body>
 </html>
